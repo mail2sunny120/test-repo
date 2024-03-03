@@ -182,7 +182,15 @@ public class Week4CodingPrj
 		return false;
 	}
 	
-	
+	/*To check if a string is a palindrome, we need to reverse the string 
+	 * and compare it with the reversed string. If both string matches 
+	 * then the string is palindrome. */
+	private static boolean chkPalindrome(String varStr){
+		String reversed = new StringBuilder(varStr).reverse().toString();
+		boolean isPalindrome = varStr.equalsIgnoreCase(reversed); //prints 'true'
+		return isPalindrome;
+	}
+		
 }
 
 
