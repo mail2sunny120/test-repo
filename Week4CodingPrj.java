@@ -10,7 +10,9 @@ public class Week4CodingPrj
 	
 		// Step 1:
 		arrayLengthAndAverage();
-		
+		//Step 2:
+		arrayStrings();
+
 		//3
 		//last element of an array = names[names.length-1];
 		
@@ -70,6 +72,30 @@ public class Week4CodingPrj
 			 System.out.println("Average="+average);
 
 		}
+
+			private static void  arrayStrings() 
+		{
+			//2.a
+			String[] names = new String[] {"Sam", "Tommy", "Tim", "Sally", "Buck","Bob"};
+			
+			int sizeOfName = 0;
+			for(int i= 0; i< names.length;i++)
+			{
+				sizeOfName += names[i].length();
+			}
+			System.out.println("Average number of letter per name="+(double)sizeOfName/names.length);
+			
+			StringBuffer combinedName = new StringBuffer();
+			
+			//2.b
+			for(int i= 0; i< names.length;i++)
+			{
+				combinedName.append(names[i]);
+				combinedName.append(" ");
+			}
+			System.out.println("CombinedName=" + combinedName.toString());
+		}
+
 	
 	/* 5. Create a new array of int called nameLengths. Write a loop to iterate over the 
 	 * previously created names array and add the length of each name to the nameLengths array.	
